@@ -6,7 +6,7 @@ import numpy as np
 
 st.set_page_config(layout="wide", page_title="GPS Positional Report")
 
-# --- HEADER (NO LOGOS, NO TENNESSEE) ---
+# --- HEADER ---
 st.markdown(f"""
 <style>
 .main {{ background-color: #0E1117; }}
@@ -55,7 +55,7 @@ intensity_config = {
 }
 conf = intensity_config[intensity_choice]
 
-# --- FINAL TARGET LOGIC ---
+# --- TARGET LOGIC ---
 def get_targets(pos_name, intensity):
     speed_pos_group = ['CB', 'WR']
     
